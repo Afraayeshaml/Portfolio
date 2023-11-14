@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=Fira+Sans&family=Heebo:wght@300&family=Merriweather&family=Poppins&family=Rubik&family=Ubuntu&display=swap');
+body{
+                     padding: 0;
+                     margin: 0;
+
+}
+.nav-bar{
+                        height: 750px;
+                        width: 100%;
+                        position: absolute;
+                        background-image: url(back11.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+}
+nav {
+                  display: flex; 
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 20px 0px 0 750px;
+                 
+                  
+}
+nav ul li{
+                        display: inline-block;
+                        margin: 13px 30px;
+                                              
+}
+nav ul li a{
+                        font-size: 18px;
+                        font-weight: bold;
+                        font-family: 'Ubuntu', sans-serif;
+                        color:#ffff;
+                        text-decoration: none;
+
+}
+nav ul li a:hover{
+                        color:rgb(225, 49, 49);
+                        border-radius: 10%;
+                        
+}
+#menu-icon{
+                        font-size: 42px;
+                        color: white;
+                        cursor: pointer;
+                        position: absolute;
+                        top: 25px;
+                        left: 1450px;
+}
+#menu-icon:hover{
+                        color: rgb(225, 49, 49);
+}
+
+/* home starting */
+
+.home
+
+.section-text{
+                        position: relative;
+                        top: 220px;
+                        left: 330px;
+                        align-items: center;
+                        justify-content: center;
+                        
+}
+
+.section-text h1{
+                        font-size: 80px;
+                        font-family: 'Poppins', sans-seri;
+                        font-weight: 700;
+                        color:aliceblue;
+                        margin-right: 800px;
+}
+.section-text h2{
+                        font-size: 60px;
+                        font-family: 'Heebo', sans-serif;
+                        color: beige;
+}
+.primary-text {
+                    font-size: 40px;
+                    font-family: 'Fira Sans', sans-serif;
+                    color: beige;    
+
+}
+.section-text svg{
+                        color: black;
+                        position: relative;
+                        left: 300px;
+                        top: 50px;
+                        animation: pop 3s ease-in-out infinite alternate ;
+                        border-radius: 20%;                       
+}
+
+@keyframes pop {
+                        from{
+                                                transform: translateY(0);
+                        }
+                        to{
+                                                transform: translateY(10px);
+                        }
+}
+
+.about{
+                        height: 800px;
+                        width: 100%;
+                        background-image: linear-gradient(black,rgb(82, 7, 28),black);
+                        padding: 600px 0px;
+                   
+}
+.about img{
+                        height: 450px;
+                        width: 400px;
+                        border: 10px rgb(5, 1, 1) solid;
+                        margin: 0px 50px 0 0;
+                        position:relative;
+                        bottom: auto
+                        
+}
+
+.main{
+                        width: 1130px;
+                        max-width: 100%;
+                        margin: 0 auto ;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        
+                        
+
+}
+.about-text{
+                        width: 600px;
+}
+
+
+.about-text h1{
+                        color: white;
+                        font-size: 80px;
+                        text-transform: capitalize;
+                        font-family:Georgia, 'Times New Roman', Times, serif;
+                        font-weight: 300;
+                        position: relative;
+                        bottom: 40px;
+                        margin-right: 320px;
+                        
+}
+.about-text h5{
+                        color: whitesmoke;
+                        font-size: 35px;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        position: relative;
+                        bottom: 20px;
+}
+
+.about-text p{
+                        color: white;
+                        letter-spacing: 1px;
+                        font-size: 20px;
+                        position: relative;
+                        top: 0px;
+
+    
+}
+
+.skil1{
+                        margin: 0;
+                        padding: 0;
+                        background-image: linear-gradient(rgb(15, 12, 12),rgb(71, 5, 37),black);
+                        color: #f0efef;
+}
+
+.skill-area{
+                        width: 100%;
+                        height: 100vh;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 20%;
+}
+
+h1{
+                        text-align: center;
+                        margin-top: 90px;
+                        font-size: 0px ;
+                        
+}
+
+.skill{
+                        position: relative;
+                        margin-bottom: 50px;
+}
+
+.skill-title{
+                        font-size: 30px;
+                        margin-bottom: 10px;
+}
+
+.skill-bar{
+                        width: 100%;
+                        background-color: rgb(64, 61, 61);
+                        height: 40px;
+                        z-index: -1;
+                        border-radius: 100px;
+                        position: absolute;
+}
+
+.skill-fill{
+                        background-image: linear-gradient(rgb(147, 36, 55),rgb(88, 84, 84),orange);
+                        height: 40px;
+                        border-radius: 100px;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        padding-right: 30px;
+                        overflow:hidden;
+                        
+}
+
+.skill-percent{
+                        font-size: 30px;
+}
+
+.html{
+                        animation: html 2s;
+                        width: 85%;
+}
+.css{
+                        animation: css 2s;
+                        width: 75%;
+}
+.python{
+                        animation: python 2s;
+                        width: 65%;
+}
+.sql{
+                        animation: sql 2s;
+                        width: 70%;
+}
+
+@keyframes html {
+                        from{
+                        width: 0;
+                        }
+                        to{
+                        width: 85%;
+                        }
+                        
+}
+@keyframes css {
+                        from{
+                        width: 0;
+                        }
+                        to{
+                        width: 75%;
+                        }
+                        
+}
+@keyframes python {
+                        from{
+                        width: 0;
+                        }
+                        to{
+                        width: 65%;
+                        }
+                        
+}
+@keyframes sql {
+                        from{
+                        width: 0;
+                        }
+                        to{
+                        width: 70%;
+                        }
+                        
+}
+                        
+/* project */
+
+.project{
+                        height: 800px;
+                        width: 100%;
+                        background-image: linear-gradient(rgb(96, 8, 35),black,black,rgb(96, 8, 35));
+                        border: 5px solid black;
+}
+.project h2{
+                        font-size: 35px;
+                        font-family: fantasy;
+                        -webkit-text-stroke: 20 black;
+                        font-weight: 700;
+                        text-align: center;
+                        padding: 30px;
+                        color: wheat;
+}
+.project content{
+                        flex-wrap: wrap;
+                        padding-bottom:50px;
+                        gap: 30px;
+}
+.project .content .frame{
+                        position: relative;
+                        width: 600px;
+                        height: 390px;
+                        padding: 20px 20px;
+                        background-color: rgb(78, 71, 71);
+                        margin: 70px;
+                        display:inline-block;
+                        box-shadow: 0 10px 15px black; 
+                        gap: 40px;
+}
+.project .content .frame .box img{
+                        width: 550px;
+                        height: 280px;                    
+}
+.project .content .frame .title{
+                        font-size: 30px;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-weight: 600;
+                        color: wheat;
+}
+
+
+.contact{
+                        height: 100vh;
+                        width: 100%;
+                        background-image: linear-gradient(black,rgb(119, 5, 32),rgb(119, 5, 32),black);
+}
+
+.contact img{
+                        height: 150px;
+                        width: 180px;
+                        margin-left: 100px;
+                        margin-top: 160px;
+                        border-radius: 50%;
+                        border: 6px rgb(80, 20, 20) solid;                      
+}
+.contact h2{
+                        font-size: 35px;
+                        font-family: serif;
+                        font-weight: 800;
+                        text-align: center;
+                        padding: 40px;
+                        color: white;
+                        text-decoration: none;
+}
+.contact img{
+    transition: transform 0.5s;
+}
+
+.contact img:hover{
+    transform: translate(10px,-15px);
+    color: rgb(234, 135, 13);
+    box-shadow: 0 0 20px 10px;
+}
+.contact svg{
+    position: relative;
+    top: 350px;
+    right: 675px;
+    color: black;
+}
+.contact svg:hover{
+    color: wheat;
+}
+
+
+
+
+
